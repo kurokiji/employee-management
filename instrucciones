@@ -1,0 +1,35 @@
+Peticiones de registro
+- Login mediante email y contraseña
+- Recuperar contraseña con email -> nueva contraseña aleatoria enviada por mail
+
+Peticiones de consultas
+LISTO! Registro de empleados (directivos y RRHH)
+LISTO! Lista de empleados.
+    si accede RRHH solo ve empleados normales
+    si accede directivo también ve RRHH
+        nombre
+        puesto de trabajo
+        salarios de los empleados normales
+LISTO! Detalle del empleado.
+    si accede RRHH solo ve empleados normales
+    si accede directivo también ve RRHH
+        nombre
+        email
+        puesto de trabajo
+        biografia
+        salario
+LISTO Ver perfil.
+    accesible por cualquier usuario
+    muestra todos los datos del usuario logueado
+LISTO Modificar datos.
+    si accede RRHH solo modifica empleados normales
+    si accede directivo también modifica RRHH, los suyos propios pero no otro directivo
+
+EMPLEADO
+    nombre (STRING)
+    email (STRING)(unico)
+    contraseña segura (STRING) Al menos 6 chars, letra mayuscula y numero
+    puesto de trabajo (ENUM: direccion, RRHH, empleado)
+    salario (FLOAT)
+    biografia (STRING)
+
